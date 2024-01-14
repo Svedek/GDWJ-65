@@ -11,5 +11,15 @@ config_version=5
 [application]
 
 config/name="GDWJ-65"
+run/main_scene="res://World/level_test.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[layer_names]
+
+2d_physics/layer_1="Terrain"
+2d_physics/layer_2="Platform"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
