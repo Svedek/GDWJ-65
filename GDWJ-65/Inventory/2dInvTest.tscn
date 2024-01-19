@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwqv50obbxqi"]
+
+[ext_resource type="Texture2D" uid="uid://5103skxgjvy2" path="res://Inventory/UI.png" id="1_v237p"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(80, 320)
+texture = ExtResource("1_v237p")
