@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cwqv50obbxqi"]
+[gd_scene load_steps=3 format=3 uid="uid://cwqv50obbxqi"]
 
-[ext_resource type="Texture2D" uid="uid://5103skxgjvy2" path="res://Inventory/UI.png" id="1_v237p"]
+[ext_resource type="Texture2D" uid="uid://7yac5u743ybl" path="res://Inventory/UI_test.png" id="1_t58iw"]
+[ext_resource type="Theme" uid="uid://bup6enxea4edr" path="res://Style/Gameplay.tres" id="2_w5g1n"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -10,4 +11,26 @@ limit_top = 0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(80, 320)
-texture = ExtResource("1_v237p")
+texture = ExtResource("1_t58iw")
+
+[node name="FuelLeft" type="Label" parent="Sprite2D"]
+offset_left = -64.0
+offset_top = 205.0
+offset_right = 64.0
+offset_bottom = 246.0
+theme = ExtResource("2_w5g1n")
+theme_override_colors/font_color = Color(0.560784, 0.592157, 0.290196, 1)
+theme_override_font_sizes/font_size = 36
+text = "FUEL LEFT"
+horizontal_alignment = 1
+
+[node name="FuelTime" type="Label" parent="Sprite2D"]
+offset_left = -64.0
+offset_top = 239.0
+offset_right = 64.0
+offset_bottom = 306.0
+theme = ExtResource("2_w5g1n")
+theme_override_colors/font_color = Color(0.560784, 0.592157, 0.290196, 1)
+theme_override_font_sizes/font_size = 60
+text = "01:23"
+horizontal_alignment = 1
